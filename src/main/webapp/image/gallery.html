@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片走廊</title>
+    <link rel="stylesheet" href="styles/layout.css" media="screen">
+</head>
+<body>
+<h1>Snapshots</h1>
+<ul>
+    <li>
+        <a href="images/jjw.jpg" onclick="showPic(this); return false" title="贾静雯">贾静雯</a>
+    </li>
+    <li>
+        <a href="images/tz.jpg" onclick="showPic(this); return false" title="谭卓">谭卓</a>
+    </li>
+    <li>
+        <a href="images/zm.jpg" onclick="showPic(this); return false" title="张萌">张萌</a>
+    </li>
+    <li>
+        <a href="images/zxy.jpg" onclick="showPic(this); return false" title="张歆艺">张歆艺</a>
+    </li>
+</ul>
+<img id="placeholder" src="images/占位图.jpg" alt="my image gallery" />
+<p id="description">Choose an image</p>
+<script type="text/javascript" src="scripts/showPic.js"></script>
+
+</body>
+</html>
