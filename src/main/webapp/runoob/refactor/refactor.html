@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is the refactor practice</title>
+    <script src="refactor.js"></script>
+</head>
+<body>
+<p>简单计算器</p>
+<table border="1" style="position: center;">
+    <tr>
+        <td>第一个数</td>
+        <td><input type="text" id="first"/></td>
+    </tr>
+    <tr>
+        <td>第二个数</td>
+        <td><input type="text" id="second"/></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <button style="width:inherit" onclick="add()">+</button>
+        <button style="width:inherit" onclick="minus()">-</button>
+        <button style="width:inherit" onclick="multiply()">*</button>
+        <button style="width:inherit" onclick="divide()">/</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">
+        <p id="result"></p>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
