@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is a validity page</title>
+</head>
+<body>
+<p>输入数字并点击验证按钮</p>
+<input id="number" type="number" min="100" max="300" required>
+<button onclick="rayFunction()">验证</button>
+<p>如果输入的数字大于300或者小于100，会提示错误信息</p>
+<p id="covered"></p>
+
+<script>
+    function rayFunction() {
+        var inputObject = document.getElementById("number");
+        if (inputObject.checkValidity()) {
+            document.getElementById("covered").innerHTML = "请输入正确的数字";
+        } else {
+            document.getElementById("covered").innerHTML = inputObject.validationMessage;
+        }
+    }
+</script>
+</body>
+</html>
