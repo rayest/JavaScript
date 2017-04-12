@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">timer</div>
+</body>
+<script type="text/javascript">
+    function animateIt(elementId) {
+        var element = document.getElementById(elementId);
+        var tick = 0;
+        var timer = setInterval(function () {
+            if (tick < 100) {
+                element.style.left = element.style.top = tick + "px";
+                tick++;
+            }
+            else {
+                clearInterval(timer);
+
+            }
+        }, 10);
+    }
+    animateIt('box');
+</script>
+</html>
